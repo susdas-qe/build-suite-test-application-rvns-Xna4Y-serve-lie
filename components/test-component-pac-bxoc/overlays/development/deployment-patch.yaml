@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: test-component-pac-bxoc
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/susdas_quay_org/build-e2e-ntyu-tenant/build-suite-test-application-rvns/test-component-pac-bxoc@sha256:389649d1d591b42a12bf31f28924f51c02263d79754a8c7c1d44fc566cb94b10
+        name: my-nginx
+        resources: {}
+status: {}
